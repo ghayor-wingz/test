@@ -127,9 +127,9 @@ export default function WhatWeDoSection() {
     <section
         ref={sectionRef}
         id="what-we-do"
-        className="min-h-screen bg-[#f4f7f8] flex items-center"
+        className="min-h-screen bg-[#f4f7f8] flex items-center max-sm:py-12"
       >
-        <div className="page-width w-full flex flex-col gap-12 lg:gap-20  max-sm:py-12">
+        <div className="page-width w-full flex flex-col gap-12 lg:gap-20">
           <div className="flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-baseline text-black">
             <h2 className="text-[16px] lg:text-[20px] font-medium leading-[0.84]">
               WHAT WE DO

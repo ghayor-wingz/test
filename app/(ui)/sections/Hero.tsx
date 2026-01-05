@@ -32,7 +32,7 @@ export default function Hero() {
           </picture>
         </div>
 
-        <div className="page-width mx-auto md:px-6">
+        <div className="md:page-width mx-auto md:px-6">
           <div className="mt-16 flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-4 md:gap-12">
             <div className="flex-1">
               <p className="text-black font-medium text-[30px] max-sm:text-center md:text-[55px] leading-[105%]">

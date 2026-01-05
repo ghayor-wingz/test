@@ -36,7 +36,7 @@ export default function ClientDetails() {
   }, [activeImage, direction]);
 
   return (
-    <section className="bg-black text-white py-24">
+    <section className="bg-black text-white py-12 md:py-24">
       <div className="page-width">
         <p className="text-[#E5EDF1] text-[20px] font-medium leading-[115%] mb-10">
           We don’t create for likes, <br /> we create for results.
