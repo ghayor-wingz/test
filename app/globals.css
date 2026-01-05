@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("https://cdn.shopify.com/s/files/1/0706/7887/2109/files/NeueHaasDisplayRoman.ttf?v=1765908403")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("https://cdn.shopify.com/s/files/1/0706/7887/2109/files/NeueHaasDisplayMediu.ttf?v=1765908403")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("https://cdn.shopify.com/s/files/1/0706/7887/2109/files/NeueHaasDisplayBold.ttf?v=1765908403")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-haas {
+  font-family: "Neue Haas Display", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer components {
+  .page-width {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding:0 2rem;
+  }
+}
+
+@media (min-width:990px) and (max-width:1400px) {
+  .stats-box {
+    max-width: 250px !important;
+  }
+  .stat-value {
+    font-size:42px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-width {
+    padding: 0 2rem;
+  }
+}
+
+.primary-button {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  color: #E5EDF1;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 115%;
+max-width: fit-content;
+}
+
+.primary-button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.primary-button .border-anim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.primary-button .border-anim::before,
+.primary-button .border-anim::after {
+  content: '';
+  position: absolute;
+  background: black;
+}
+
+.primary-button .border-anim::before {
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.primary-button .border-anim::after {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.primary-button .border-anim .bottom {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  position: absolute;
+}
+
+.primary-button .border-anim .left {
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: black;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  position: absolute;
+}
+
+.primary-button:hover .border-anim::before {
+  animation: draw-top 0.5s forwards;
+}
+
+.primary-button:hover .border-anim::after {
+  animation: draw-right 0.5s forwards 0.5s;
+}
+
+.primary-button:hover .border-anim .bottom {
+  animation: draw-bottom 0.5s forwards 1s;
+}
+
+.primary-button:hover .border-anim .left {
+  animation: draw-left 0.5s forwards 1.5s;
+}
+
+@keyframes draw-top {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes draw-right {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes draw-bottom {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes draw-left {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
