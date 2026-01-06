@@ -21,7 +21,7 @@ export default function Hero() {
             aria-hidden="true"
           >
             <source
-              src="https://cdn.shopify.com/videos/c/o/v/d40e0bbef51b4a0988f8d550001b9d04.mp4"
+              src="https://cdn.shopify.com/videos/c/o/v/13490da696f54bd2b20ea8d3b8e76f1c.mp4"
               type="video/mp4"
             />
           </video>
