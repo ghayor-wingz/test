@@ -204,9 +204,11 @@ export default function WhatWeDoSection() {
                 </button>
 
                 <div
-                  ref={(el) => (accordionRefs.current[index] = el)}
-                  className="overflow-hidden h-0 opacity-0"
-                >
+                    ref={(el) => {
+                      accordionRefs.current[index] = el;
+                    }}
+                    className="overflow-hidden h-0 opacity-0"
+                  >
                   <div className="mt-6 space-y-4">
                     <Image
                       src={service.image}
