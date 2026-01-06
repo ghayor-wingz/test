@@ -36,7 +36,7 @@ export default function ClientDetails() {
   }, [activeImage, direction]);
 
   return (
-    <section className="bg-black text-white py-12 md:py-24">
+    <section className="bg-black text-white py-12 md:py-24" id="case-studies">
       <div className="page-width">
         <p className="text-[#E5EDF1] text-[20px] font-medium leading-[115%] mb-10">
           We don’t create for likes, <br /> we create for results.
@@ -64,20 +64,20 @@ export default function ClientDetails() {
         <div ref={contentRef}>
           <div className="flex flex-col lg:flex-row justify-between gap-10 mb-20">
             <div className="animate-item">
-              <h2 className="text-[#E5EDF1] text-[60px] font-semibold leading-[84%] mb-3">{activeClient.name}</h2>
+              <h2 className="text-[#E5EDF1] text-[40px] md:text-[60px] font-medium leading-[84%] mb-3">{activeClient.name}</h2>
               <span className="text-[18px] text-[rgba(229,237,241,0.9)]">({activeClient.since})</span>
             </div>
             <p className="max-w-xl text-[18px] font-normal md:text-[20px] leading-[120%] animate-item">{activeClient.description}</p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-5 items-stretch md:max-h-[550px]">
-            <div className="relative bg-neutral-900 rounded-xl overflow-hidden animate-item mx-auto w-full max-w-[358px] h-[313px] lg:mx-0 lg:max-w-[569px] lg:h-[550px] flex-shrink-0">
+            <div className="relative bg-neutral-900 rounded-xl overflow-hidden animate-item mx-auto w-full max-w-full h-[313px] lg:mx-0 lg:max-w-[569px] lg:h-[550px] flex-shrink-0">
               <div ref={imageWrapperRef} key={activeClient.images[activeImage]} className="absolute inset-0">
                 <picture className="block lg:hidden w-full h-full">
-                  <img src={activeClient.images[activeImage]} alt={activeClient.name} className="w-full h-full object-contain" />
+                  <img src={activeClient.images[activeImage]} alt={activeClient.name} className="w-full h-full object-cover" />
                 </picture>
                 <div className="hidden lg:block">
-                  <Image src={activeClient.images[activeImage]} alt={activeClient.name} fill className="object-contain" priority />
+                  <Image src={activeClient.images[activeImage]} alt={activeClient.name} fill className="object-cover" priority />
                 </div>
               </div>
               <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 z-10">
@@ -100,7 +100,7 @@ export default function ClientDetails() {
 
             <div className={`flex flex-col w-full lg:w-[290px] gap-4 flex-1`}>
               {activeClient.testimonial?.quote && (
-                <div className="bg-[#F3F757] rounded-xl p-6 animate-item flex-shrink-0">
+                <div className="bg-[#F3F757] rounded-xl px-6 py-10 animate-item flex-shrink-0">
                   <p className="text-black text-[18px] font-medium leading-[110%] tracking-[0.18px] mb-6">“{activeClient.testimonial.quote}”</p>
                   <div className="flex items-center gap-3">
                     <Image src={activeClient.testimonial.avatar} alt={activeClient.testimonial.author} width={40} height={40} className="rounded-full" />

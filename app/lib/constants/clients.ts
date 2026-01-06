@@ -54,7 +54,7 @@ export const CLIENTS: Client[] = [
     stats: [
       { value: "+45%", label: "Revenue attributable to Klaviyo" },
       { value: "+35%", label: "CVR landing page" },
-      { value: "+15", label: "UGCs (User Generated Contents)" },
+      { value: "+15%", label: "UGCs (User Generated Contents)" },
     ],
     testimonial: {
       quote:
@@ -68,7 +68,7 @@ export const CLIENTS: Client[] = [
 
   {
     id: "ezbombs",
-    name: "Ez Bombs",
+    name: "EZ Bombs",
     since: "Client since 2024",
     description:
       "EZ Bombs went viral on TikTok Shop and needed email that did more than look good — it had to convert. Our work focused on turning that TikTok audience into repeat customers on Shopify.",

@@ -1,8 +1,8 @@
 'use client';
 
-import { ButtonHTMLAttributes } from 'react';
+import { AnchorHTMLAttributes } from 'react';
 
-type PrimaryButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type PrimaryButtonProps = AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export default function PrimaryButton({
   className = '',
@@ -10,13 +10,13 @@ export default function PrimaryButton({
   ...props
 }: PrimaryButtonProps) {
   return (
-    <button
+    <a
       {...props}
       className={`
         primary-button relative inline-flex items-center justify-center
         text-xs font-semibold uppercase tracking-wide
         px-6 py-3 rounded-md
-        focus:outline-none focus:ring-2 focus:ring-offset-2
+        focus:outline-none focus:ring-1 focus:ring-offset-1
         ${className}
       `}
     >
@@ -26,6 +26,6 @@ export default function PrimaryButton({
         <span className="bottom"></span>
         <span className="left"></span>
       </span>
-    </button>
+    </a>
   );
 }

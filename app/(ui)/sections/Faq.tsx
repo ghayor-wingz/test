@@ -110,12 +110,12 @@ export default function Faq() {
           <p className="text-[#F3F757] text-[24px] md:text-[28px] lg:text-[34px] font-medium leading-tight mb-12">
             Hear our CEO explain how we built full-funnel strategies
             that drove <br className="max-sm:hidden" />
-            <span className="font-semibold max-sm:font-medium">
+            <span className="font-medium">
               30% lower CPAs
             </span>{' '}
             <br className="max-sm:hidden" />
             and{' '}
-            <span className="font-semibold max-sm:font-medium">
+            <span className="font-medium">
               50% cheaper add-to-carts
             </span>
           </p>

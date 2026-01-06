@@ -5,7 +5,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 export default function Performance() {
   return (
-    <section className="w-full bg-[#F3F757] py-12 md:py-16">
+    <section className="w-full bg-[#F3F757] py-12 md:py-16" id='results'>
       <div className="page-width mx-auto px-6 flex flex-col gap-6 md:py-20 ">
         <div className="flex gap-6 max-sm:flex-col-reverse">
           <div className="flex-1 bg-white rounded-xl flex flex-col md:max-w-fit p-6 md:p-12 max-sm:justify-center max-sm:items-center max-sm:order-2">
@@ -123,7 +123,7 @@ export default function Performance() {
             </div>
           </div>
 
-          <div className="flex-[1.3] flex flex-col md:min-w-[400px] order-6 max-sm:items-center max-sm:gap-6">
+          <div className="flex-[1.3] flex flex-col md:min-w-[400px] max-sm:order-6 max-sm:items-center max-sm:gap-6">
             <div className="bg-white p-12 flex justify-center flex-col items-center gap-4 rounded-xl">
               <Image
                 src="/quote-icon.webp"
@@ -148,7 +148,7 @@ export default function Performance() {
             </div>
 
             <div className="my-4">
-              <PrimaryButton className="text-white text-[20px] font-medium leading-[115%] tracking-[0.2px] bg-black">
+              <PrimaryButton className="text-white text-[20px] font-medium leading-[115%] tracking-[0.2px] bg-black hover:bg-[#A3AFB5] hover:text-black" href="#contact">
                 Partner With 551
               </PrimaryButton>
             </div>

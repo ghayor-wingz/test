@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const menuLinks = ['WHY US?', 'WHAT WE DO', 'OUR RESULTS', 'CASE STUDIES'];
+const menuLinks = [
+  { label: "WHAT WE DO", href: "#what-we-do" },
+  { label: "OUR RESULTS", href: "#results" },
+  { label: "CASE STUDIES", href: "#case-studies" },
+];
+
 const socialIcons = ['fb-icon', 'instagram-icon', 'linkedin-icon', 'x-icon', 'yt-icon'];
 const partnerLogos = [
   '/shopify.webp',
@@ -11,7 +16,7 @@ const partnerLogos = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F3F757] text-black pt-10 pb-10 pt-30">
+    <footer className="bg-[#F3F757] text-black pt-10 md:pt-20 pb-10">
       <div className="page-width flex flex-col md:flex-row md:justify-between md:items-start gap-10">
         <div className="flex flex-col md:gap-6 md:items-start">
           <div className="flex flex-col items-center md:items-center md:justify-between gap-10 md:gap-[5rem]">
@@ -24,9 +29,9 @@ export default function Footer() {
               priority
             />
             <nav className="flex flex-col items-center gap-2 md:flex-row md:gap-6 md:ml-6 md:items-center md:mt-[6rem]">
-              {menuLinks.map((link) => (
-                <Link key={link} href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}>
-                  <span className="hover:underline">{link}</span>
+              {menuLinks.map((link, idx) => (
+                <Link key={idx} href={link.href}>
+                  <span className="hover:underline">{link.label}</span>
                 </Link>
               ))}
             </nav>
@@ -37,7 +42,7 @@ export default function Footer() {
           <p>Email: <a href="mailto:fivefiveone_contact@551.com" className="underline">fivefiveone_contact@551.com</a></p>
           <p>Phone: <a href="tel:+55305661412" className="underline">+55 305 661 412</a></p>
           <div className="mt-6 flex flex-col items-center md:items-start gap-2">
-            <p className='font-[16px] font-medium'>Social</p>
+            <p className="text-[16px] font-medium">Social</p>
             <div className="flex gap-4 justify-center md:justify-start">
               {socialIcons.map((icon) => (
                 <Image
@@ -68,7 +73,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 md:-mt-6 text-sm text-center md:ml-45">
+      <div className="mt-8 md:-mt-6 text-sm text-center md:ml-[45px]">
         © 2025 551 GROWTH LAB. All rights reserved.
       </div>
     </footer>

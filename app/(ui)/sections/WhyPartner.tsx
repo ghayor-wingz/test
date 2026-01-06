@@ -5,7 +5,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 export default function WhyPartner() {
   return (
-    <section className="w-full bg-[#a9b3b6] py-14 md:py-20">
+    <section className="w-full bg-[#a2afb5] py-14 md:py-30">
       <div className="page-width flex flex-col gap-12 md:gap-30">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
           
@@ -25,7 +25,7 @@ export default function WhyPartner() {
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <PrimaryButton className="bg-[#F3F757] !text-black">
+              <PrimaryButton className="bg-[#F3F757] text-black hover:bg-black hover:text-[#A3AFB5]" href="#contact">
                 Grow With Us
               </PrimaryButton>
             </div>
@@ -43,26 +43,25 @@ export default function WhyPartner() {
         </div>
 
         <div className="w-full relative">
-          <picture>
+          <video
+            className="w-full rounded-xl md:rounded-2xl"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="none"
+          >
             <source
-              srcSet="https://cdn.shopify.com/s/files/1/0706/7887/2109/files/ad-grow-dk.gif?v=1767370555"
+              src="https://cdn.shopify.com/videos/c/o/v/d7058ebf0d6d479cb54607b93e7b56c9.mp4"
+              type="video/mp4"
               media="(min-width:1024px)"
-              type="image/gif"
             />
             <source
-              srcSet="https://cdn.shopify.com/s/files/1/0706/7887/2109/files/ad-grow-mb.gif?v=1767370505"
+              src="https://cdn.shopify.com/videos/c/o/v/6d773d3c900549cda095b6c11943fdbf.mp4"
+              type="video/mp4"
               media="(max-width:1023px)"
-              type="image/gif"
             />
-            <img
-              src="https://cdn.shopify.com/s/files/1/0706/7887/2109/files/ad-grow-dk.gif?v=1767370555"
-              alt="Growth animation"
-              className="w-full rounded-xl md:rounded-2xl"
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-            />
-          </picture>
+          </video>
         </div>
 
       </div>

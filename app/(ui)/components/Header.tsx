@@ -6,10 +6,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { label: "WHY US?", href: "/why-us" },
-  { label: "WHAT WE DO", href: "/what-we-do" },
-  { label: "OUR RESULTS", href: "/results" },
-  { label: "CASE STUDIES", href: "/case-studies" },
+  { label: "WHAT WE DO", href: "#what-we-do" },
+  { label: "OUR RESULTS", href: "#results" },
+  { label: "CASE STUDIES", href: "#case-studies" },
 ];
 
 const linkBase =
@@ -26,7 +25,7 @@ export default function Header() {
   return (
     <header className="relative z-50 w-full bg-[#F3F757] py-4">
       <div className="page-width py-4">
-        <div className="flex items-center justify-between px-4">
+        <div className="flex items-center justify-between">
           <Link href="/" className="relative z-50">
             <Image
               src="/551-logo.webp"
