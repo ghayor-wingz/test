@@ -19,7 +19,7 @@ const SERVICES: Service[] = [
   {
     key: "web",
     title: "WEB",
-    image: "/web.webp",
+    image: "https://cdn.shopify.com/s/files/1/0706/7887/2109/files/web.webp?v=1767801438",
     description:
       "A high-performing website is the backbone of your brand. Whether you need a revamp or a full build from scratch, we create stunning, conversion-focused websites that drive sales.",
     list: ["UI/UX DESIGN", "CRO", "DEVELOPMENT"],
@@ -27,7 +27,7 @@ const SERVICES: Service[] = [
   {
     key: "creative",
     title: "CREATIVE",
-    image: "/creative.webp",
+    image: "https://cdn.shopify.com/s/files/1/0706/7887/2109/files/creative.webp?v=1767801438",
     description:
       "It’s not just about looking good and sounding clever. Good creative needs to earn attention and convert that into sales. We develop brand systems and performance creative that stop the scroll and move people to act.",
     list: ["BRAND IDENTITY", "STATIC & VIDEO ADS"],
@@ -35,7 +35,7 @@ const SERVICES: Service[] = [
   {
     key: "paid-media",
     title: "PAID MEDIA",
-    image: "/paid-media.webp",
+    image: "https://cdn.shopify.com/s/files/1/0706/7887/2109/files/paid-media.webp?v=1767801437",
     description:
       "Media is only as strong as the strategy behind it. We plan, launch, and optimize paid media with a singular focus on efficient growth.",
     list: ["MEDIA STRATGEY", "CHANNEL MANAGMENT", "OPTIMIZATION & SCALING"],
@@ -43,7 +43,7 @@ const SERVICES: Service[] = [
   {
     key: "retention",
     title: "RETENTION",
-    image: "/retention.webp",
+    image: "https://cdn.shopify.com/s/files/1/0706/7887/2109/files/retention.webp?v=1767801437",
     description:
       "Acquisition gets attention. Retention builds businesses. We design retention systems that turn first-time buyers into long-term customers.",
     list: [
@@ -56,7 +56,7 @@ const SERVICES: Service[] = [
   {
     key: "tiktok-shop",
     title: "TIKTOK SHOP",
-    image: "/tiktok-shop.webp",
+    image: "https://cdn.shopify.com/s/files/1/0706/7887/2109/files/tiktok-shop.webp?v=1767801438",
     description:
       "TikTok Shop is not just another channel. It has become a supercharged revenue engine.",
     list: ["SHOP SETUP", "CREATOR STRATEGY", "CONTENT-TO-CONVERSION FLOWS"],
@@ -216,6 +216,7 @@ export default function WhatWeDoSection() {
                       width={1200}
                       height={900}
                       className="rounded-lg"
+                      loading="lazy"
                     />
 
                     <p className="text-[15px] leading-[1.5] text-black">

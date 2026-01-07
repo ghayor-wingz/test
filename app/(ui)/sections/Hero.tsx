@@ -10,8 +10,9 @@ export default function Hero() {
           <h1 className="sr-only">
             Five Five One — Beautiful brands attract. Profitable brands convert.
           </h1>
-          <video
-            className="absolute inset-0 h-full w-full object-contain md:hidden mt-10"
+          <div className="md:hidden mt-10 overflow-hidden bg-[#F3F757] w-full">
+            <video
+            className="object-cover w-full block vid-height"
             autoPlay
             muted
             loop
@@ -25,6 +26,8 @@ export default function Hero() {
               type="video/mp4"
             />
           </video>
+          </div>
+          
 
           <video
             className="absolute inset-0 h-full w-full object-contain hidden md:block "

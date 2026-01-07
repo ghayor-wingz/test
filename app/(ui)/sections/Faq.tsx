@@ -12,22 +12,22 @@ const faqs = [
   {
     question: 'Do you focus more on creative or on performance?',
     answer:
-      'We believe creative is performance. Every creative decision is informed by data, testing, and measurable outcomes.',
+      'We do not choose between creative and performance. We design for both at the same time. Strong creative earns attention and builds trust. Performance systems turn that attention into revenue. At 551, every concept is developed with a clear performance hypothesis and every performance insight feeds back into the creative. The result is work that looks intentional and scales efficiently.',
   },
   {
     question: 'How fast can we expect to see results?',
     answer:
-      'Initial traction typically happens within 30–60 days, depending on traffic volume and funnel complexity.',
+      'Speed depends on the starting point, but momentum usually comes quickly. In the early phase, our focus is on learning fast. We test messaging, offers, and formats to identify clear signals. Most partners see directional performance insights within the first few weeks and measurable growth as winning patterns are refined and scaled over time.',
   },
   {
     question: 'Can 551 work with brands outside the U.S.?',
     answer:
-      'Yes. We work globally and adapt media strategies based on regional market dynamics.',
+      'Yes. We’re an international team with experience in many global markets. We adapt strategy and creative to the different platforms and consumer behaviors of specific regions. While the channels may change, the fundamentals stay the same. Clear positioning, strong creative, and disciplined testing translate across borders when executed with local nuance.',
   },
   {
     question: 'Are you an agency or a long-term partner?',
     answer:
-      'We position ourselves as long-term growth partners focused on sustainable profitability.',
+      'We operate as a long-term growth partner. Our best work happens when we are deeply embedded in a brand’s evolution, not just executing tasks but helping shape strategy over time. We test, learn, and scale alongside our partners, focusing on sustainable growth rather than short-term wins.',
   },
 ];
 

@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import PrimaryButton from '@/app/(ui)/components/PrimaryButton';
 
 export default function ScalingFormSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -10,15 +9,19 @@ export default function ScalingFormSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     setIsSubmitting(true);
     setIsSuccess(false);
+
+    // Simulate API call (replace with real submit logic)
     await new Promise((r) => setTimeout(r, 2000));
+
     setIsSubmitting(false);
     setIsSuccess(true);
   };
 
   return (
-    <section className="bg-slate-50 py-18 md:py-40 px-4" id='contact'>
+    <section className="bg-slate-50 py-18 md:py-40 px-4" id="contact">
       <div className="page-width">
         <div className="flex flex-col-reverse items-center gap-14 lg:grid lg:grid-cols-2 lg:items-center">
           <div className="relative w-full overflow-hidden rounded-xl">
@@ -36,61 +39,72 @@ export default function ScalingFormSection() {
             <h2 className="mb-8 text-center text-[32px] md:text-4xl font-medium leading-tight text-slate-900 lg:text-left">
               Ready to Start Scaling Up Your Brand?
             </h2>
-
-            <form onSubmit={handleSubmit} className="space-y-4 max-sm:flex max-sm:flex-col max-sm:items-center">
-              <div className="flex flex-col gap-4 sm:flex-row max-sm:w-full">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  required
-                  className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2"
-                />
-                <input
-                  type="url"
-                  placeholder="Website"
-                  className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2"
-                />
+            {isSuccess ? (
+              <div className="rounded-xl bg-white p-8 text-center shadow-sm">
+                <h3 className="mb-3 text-2xl font-semibold text-slate-900">
+                  Thanks for reaching out! 🎉
+                </h3>
+                <p className="text-slate-600">
+                  Your message has been submitted successfully.  
+                  Our team will get back to you shortly.
+                </p>
               </div>
+            ) : (
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-4 max-sm:flex max-sm:flex-col max-sm:items-center"
+              >
+                <div className="flex flex-col gap-4 sm:flex-row max-sm:w-full">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                    className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2 text-black"
+                  />
+                  <input
+                    type="url"
+                    placeholder="Website"
+                    className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2 text-black" 
+                  />
+                </div>
 
-              <div className="flex flex-col gap-4 sm:flex-row max-sm:w-full">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  required
-                  className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2"
-                />
-              </div>
+                <div className="flex flex-col gap-4 sm:flex-row max-sm:w-full">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                    className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2 text-black"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2 text-black"
+                  />
+                </div>
 
-              <textarea
-                placeholder="Message"
-                rows={4}
-                className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2"
-              />
+                <textarea
+                  placeholder="Message"
+                  rows={4}
+                  className="w-full rounded-md bg-slate-200 px-4 py-3 text-sm placeholder-slate-500 focus:bg-white focus:outline-none focus:ring-2 text-black"
+                />
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`flex h-12 items-center justify-center text-[20px] px-8 font-semibold uppercase leading-[115%] tracking-[0.2px] transition-colors duration-300 cursor-pointer rounded-[8px] ${
+                  className={`flex h-12 items-center justify-center px-8 text-[20px] font-semibold uppercase leading-[115%] tracking-[0.2px] transition-colors duration-300 cursor-pointer rounded-[8px] ${
                     isSubmitting
                       ? 'bg-slate-300 text-black'
-                      : isSuccess
-                      ? 'bg-green-400 text-black hover:bg-black hover:text-white'
                       : 'bg-[#F3F757] text-black hover:bg-black hover:text-white'
                   }`}
                 >
                   {isSubmitting ? (
                     <span className="h-5 w-5 animate-spin rounded-full border-2 border-black/30 border-t-black" />
-                  ) : isSuccess ? (
-                    'Submitted ✓'
                   ) : (
                     'Grow With Us'
                   )}
                 </button>
-            </form>
+              </form>
+            )}
           </div>
         </div>
       </div>

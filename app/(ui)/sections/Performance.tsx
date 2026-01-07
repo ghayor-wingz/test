@@ -6,17 +6,18 @@ import PrimaryButton from '../components/PrimaryButton';
 export default function Performance() {
   return (
     <section className="w-full bg-[#F3F757] py-12 md:py-16" id='results'>
-      <div className="page-width mx-auto px-6 flex flex-col gap-6 md:py-20 ">
+      <div className="page-width mx-auto px-6 flex flex-col gap-6 md:py-20 flex-wrap">
         <div className="flex gap-6 max-sm:flex-col-reverse">
           <div className="flex-1 bg-white rounded-xl flex flex-col md:max-w-fit p-6 md:p-12 max-sm:justify-center max-sm:items-center max-sm:order-2">
             <p className="text-black text-sm font-medium leading-[1.2] capitalize">
               Over
             </p>
             <h3 className="text-black text-[49px] md:text-[57px] font-medium leading-[1.2] capitalize">
-              70+
+              45+
             </h3>
-            <p className="text-black text-[20px] font-medium leading-[1.2] capitalize mb-4">
-              Happy Clients
+            <p className="text-black text-[20px] font-medium leading-[1.2] capitalize mb-4 flex flex-col">
+              <span>Happy Clients</span>
+              <small>Since 2021</small>
             </p>
             <div className="mt-auto">
               <Image
@@ -40,7 +41,7 @@ export default function Performance() {
                 className="max-h-[62px]"
               />
               <h3 className="text-black text-[60px] md:text-[77px] font-medium leading-[1.5] capitalize ">
-                20M+
+                94M+
               </h3>
             </div>
             <p className="text-black text-[25px] md:text-[30px] font-medium leading-[1.2] capitalize">
@@ -58,7 +59,7 @@ export default function Performance() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-stretch max-sm:flex-col">
+        <div className="flex gap-6 items-stretch max-sm:flex-col flex-wrap">
           <div className="flex-1 bg-white rounded-xl p-6 md:p-12 max-h-fit md:min-w-[420px] max-sm:flex max-sm:flex-col items-center">
             <div className="flex gap-4 items-center">
               <Image
@@ -70,19 +71,19 @@ export default function Performance() {
                 className="max-h-[62px]"
               />
               <h3 className="text-black text-[60px] md:text-[77px] font-medium leading-[1.5] capitalize">
-                60M+
+                200M+
               </h3>
             </div>
             <p className="text-black text-center text-[28px] md:text-[33px] font-medium leading-[1.5] tracking-[0.33px] capitalize">
               Revenue Generated
             </p>
-            <p className="text-black text-center text-[13px] font-medium leading-[1.2] capitalize">
-              Lorem ipsum dolor amet <br /> Amet Dlor Lorem Ipsum
+            <p className="text-black text-center text-[13px] font-medium leading-[1.2] capitalize md:max-w-[80%] md:mx-auto">
+               by building healthy funnels, profitable acquisition, and retention systems that compound over time.
             </p>
           </div>
 
           <div className="flex-1 flex flex-col gap-6">
-            <div className="bg-white rounded-xl p-6 md:min-w-[205px] max-sm:flex max-sm:flex-col items-center">
+            <div className="bg-white rounded-xl px-6 py-10 md:min-w-[205px] max-sm:flex max-sm:flex-col items-center">
               <div className="flex gap-4 items-center">
                 <span className="text-black text-center text-[60px] font-medium leading-[1.5] capitalize">
                   4.8
@@ -97,12 +98,9 @@ export default function Performance() {
               <p className="text-black text-[20px] font-medium leading-[1.05] capitalize max-sm:text-center">
                 Average Client <br /> Rating
               </p>
-              <p className="text-black text-[13px] font-medium leading-[1.2] capitalize mt-8">
-                Lorem ipsum dolor amet
-              </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 md:min-w-[205px] max-sm:flex max-sm:flex-col items-center">
+            <div className="bg-white rounded-xl px-6 py-10 md:min-w-[205px] max-sm:flex max-sm:flex-col items-center">
               <div className="flex gap-4 items-center">
                 <span className="text-black text-[60px] font-medium leading-[1.5] capitalize">
                   12k+
@@ -117,9 +115,6 @@ export default function Performance() {
               <p className="text-black text-[20px] font-medium leading-[1.05] capitalize">
                 High performing <br /> Ads Delivered
               </p>
-              <p className="text-black text-[13px] font-medium leading-[1.2] capitalize mt-8">
-                Lorem ipsum dolor amet
-              </p>
             </div>
           </div>
 
@@ -133,16 +128,15 @@ export default function Performance() {
                 className="mb-2"
               />
               <p className="text-black text-center text-[16px] font-medium leading-[1.2]">
-                Their team are excellent strategists, they aren’t afraid to test
-                new ideas.
+                "What separates them from other agencies is their obsessions with testing. Great process and testing is the key to world-class marketing in my opinion and 551 does this at a high level.”
               </p>
               <hr className="w-full" />
               <div>
                 <p className="text-black text-center text-[32px] font-medium leading-[1.5] capitalize">
-                  Kristy Kohler
+                  Vincent Bradley
                 </p>
                 <p className="text-black text-center text-[13px] font-medium leading-[1.05] capitalize">
-                  Growth Marketing Manager
+                  CEO - Proper Wild
                 </p>
               </div>
             </div>
@@ -157,14 +151,19 @@ export default function Performance() {
           <div className="flex-1 bg-white rounded-xl p-6 flex flex-col justify-between max-h-fit max-sm:flex max-sm:flex-col items-center">
             <div>
               <h3 className="text-black text-[60px] font-medium leading-[1.5] capitalize max-sm:text-center">
-                100+
+                18+
               </h3>
-              <p className="text-black text-[20px] font-medium leading-[1.05] capitalize md:max-w-[70%]">
-                Lorem Ipsum Dolor Amet
+              <p className="text-black text-[20px] font-medium leading-[1.05] capitalize md:max-w-[100%]">
+                Talented people across the globe
               </p>
             </div>
-            <p className="text-black text-[13px] font-medium leading-[1.2] capitalize mt-4 md:mt-8">
-              Lorem ipsum dolor amet
+            <p className="text-black text-[13px] font-medium leading-[1.2] capitalize mt-4 md:mt-8 flex">
+             <Image
+                  src="/flags.webp"
+                  alt="team country flags"
+                  width={200}
+                  height={32}
+                />
             </p>
           </div>
         </div>

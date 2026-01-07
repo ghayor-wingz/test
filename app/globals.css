@@ -178,3 +178,25 @@ body {
   to { transform: scaleY(1); }
 }
 
+@media (min-width:400px) and (max-width:500px) {
+  .vid-height {
+    min-height:235px;
+  }
+}
+@media (min-width:380px) and (max-width:399px) {
+  .vid-height {
+    min-height:212px;
+  }
+}
+
+@media (min-width:340px) and (max-width:375px) {
+  .vid-height {
+    min-height:210px;
+  }
+}
+
+@media (min-width:300px) and (max-width:370px) {
+  .vid-height {
+    min-height:172px;
+  }
+}
