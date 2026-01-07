@@ -5,7 +5,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 export default function WhyPartner() {
   return (
-    <section className="w-full bg-[#a2afb5] py-14 md:py-30">
+    <section className="w-full bg-[#a2afb5] py-14 md:py-30" id='grow'>
       <div className="page-width flex flex-col gap-12 md:gap-30">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
           

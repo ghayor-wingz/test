@@ -74,7 +74,7 @@ export default function ClientDetails() {
             <div className="relative bg-neutral-900 rounded-xl overflow-hidden animate-item mx-auto w-full max-w-full h-[313px] lg:mx-0 lg:max-w-[569px] lg:h-[550px] flex-shrink-0">
               <div ref={imageWrapperRef} key={activeClient.images[activeImage]} className="absolute inset-0">
                 <picture className="block lg:hidden w-full h-full">
-                  <img src={activeClient.images[activeImage]} alt={activeClient.name} className="w-full h-full object-cover" />
+                  <img src={activeClient.images[activeImage]} alt={activeClient.name} className="w-full h-full object-cover" loading="lazy"/>
                 </picture>
                 <div className="hidden lg:block">
                   <Image src={activeClient.images[activeImage]} alt={activeClient.name} fill className="object-cover" priority />

@@ -153,7 +153,7 @@ export default function Performance() {
               <h3 className="text-black text-[60px] font-medium leading-[1.5] capitalize max-sm:text-center">
                 18+
               </h3>
-              <p className="text-black text-[20px] font-medium leading-[1.05] capitalize md:max-w-[100%]">
+              <p className="text-black text-[20px] font-medium leading-[1.05] capitalize md:max-w-[100%] max-sm:text-center">
                 Talented people across the globe
               </p>
             </div>

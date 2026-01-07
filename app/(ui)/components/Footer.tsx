@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 const menuLinks = [
   { label: "WHAT WE DO", href: "#what-we-do" },
-  { label: "OUR RESULTS", href: "#results" },
   { label: "CASE STUDIES", href: "#case-studies" },
+  { label: "OUR RESULTS", href: "#results" },
+  { label: "GROW WITH US", href: "#grow" },
 ];
 
 const socialIcons = ['fb-icon', 'instagram-icon', 'linkedin-icon', 'x-icon', 'yt-icon'];
@@ -73,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 md:-mt-6 text-sm text-center md:ml-[45px]">
+      <div className="mt-8 md:-mt-6 text-sm text-center md:ml-[15%]">
         © 2025 551 GROWTH LAB. All rights reserved.
       </div>
     </footer>
