@@ -36,15 +36,15 @@ export default function Faq() {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <section className="w-full bg-black text-white max-sm:py-6 md:py-24">
-      <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+    <section className="w-full bg-black text-white max-sm:py-12 md:py-24">
+      <div className="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 md:gap-20 items-start">
         <div>
           <p className="text-[#F3F757] text-[20px] font-medium mb-4 md:mb-6">
             FAQ
           </p>
 
           <p className="text-[#E5EDF1] text-[16px] md:text-[18px] font-medium mb-16 md:mb-28 max-w-md">
-            We get it — choosing a growth partner is a big decision.
+            We get it — choosing a growth partner is a big decision.<br/>
             Here are some answers that might help.
           </p>
 
@@ -109,11 +109,10 @@ export default function Faq() {
         <div>
           <p className="text-[#F3F757] text-[24px] md:text-[28px] lg:text-[34px] font-medium leading-tight mb-12">
             Hear our CEO explain how we built full-funnel strategies
-            that drove <br className="max-sm:hidden" />
+            that drove {' '}
             <span className="font-medium">
               30% lower CPAs
             </span>{' '}
-            <br className="max-sm:hidden" />
             and{' '}
             <span className="font-medium">
               50% cheaper add-to-carts

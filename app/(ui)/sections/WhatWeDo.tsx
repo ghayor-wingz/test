@@ -113,9 +113,9 @@ export default function WhatWeDoSection() {
       const trigger = ScrollTrigger.create({
         trigger: sectionRef.current,
         start: "top top",
-        end: `+=${total * 600}`,
+        end: `+=${total * 400}`,
         pin: true,
-        scrub: 0.6,
+        scrub: 0.4,
         anticipatePin: 1,
         fastScrollEnd: true,
         onUpdate: (self) => {

@@ -50,7 +50,7 @@ export default function Performance() {
           </div>
 
           <div className="flex-1 md:p-6 flex flex-col gap-2 justify-center max-w-[475px] max-sm:order-3">
-            <p className="text-[#8A9398] text-[20px] font-medium leading-[0.84] max-sm:mb-2">
+            <p className="text-[#8A9398] text-[20px] font-medium leading-[0.84] max-sm:mb-2 uppercase">
               Performance
             </p>
             <h3 className="text-black text-[32px] md:text-[40px] font-medium leading-[1.05] tracking-[-0.4px]">
@@ -106,7 +106,7 @@ export default function Performance() {
                   12k+
                 </span>
                 <Image
-                  src="/trophy.webp"
+                  src="https://cdn.shopify.com/s/files/1/0706/7887/2109/files/trophy.webp?v=1767894857"
                   alt="trophy"
                   width={32}
                   height={32}
