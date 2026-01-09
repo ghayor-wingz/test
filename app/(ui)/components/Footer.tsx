@@ -40,8 +40,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center md:items-start gap-4">
           <h2 className="text-lg font-medium mb-4">LET'S CONNECT</h2>
-          <p>Email: <a href="mailto:fivefiveone_contact@551.com" className="underline">fivefiveone_contact@551.com</a></p>
-          <p>Phone: <a href="tel:+55305661412" className="underline">+55 305 661 412</a></p>
+          <p><a href="mailto:fivefiveone_contact@551.com" className="underline">fivefiveone_contact@551.com</a></p>
+          <p><a href="tel:+55305661412" className="underline">+55 305 661 412</a></p>
           <div className="mt-6 flex flex-col items-center md:items-start gap-2">
             <p className="text-[16px] font-medium">Social</p>
             <div className="flex gap-4 justify-center md:justify-start">

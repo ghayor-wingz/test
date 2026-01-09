@@ -106,8 +106,8 @@ export default function Faq() {
           </div>
         </div>
 
-        <div>
-          <p className="text-[#F3F757] text-[24px] md:text-[28px] lg:text-[34px] font-medium leading-tight mb-12">
+        <div className='flex flex-col justify-between max-h-[90%] h-full max-sm:gap-8'>
+          <p className="text-[#F3F757] text-[24px] md:text-[28px] lg:text-[34px] font-medium leading-tight">
             Hear our CEO explain how we built full-funnel strategies
             that drove {' '}
             <span className="font-medium">
@@ -118,44 +118,46 @@ export default function Faq() {
               50% cheaper add-to-carts
             </span>
           </p>
+          <div>
+              <div className="relative rounded-2xl overflow-hidden bg-black aspect-video">
+                  {!videoLoaded && (
+                    <Image
+                      src="/video-placeholder.webp"
+                      alt="Video preview"
+                      fill
+                      priority
+                      className="object-cover"
+                    />
+                  )}
 
-          <div className="relative rounded-2xl overflow-hidden bg-black aspect-video">
-            {!videoLoaded && (
-              <Image
-                src="/video-placeholder.webp"
-                alt="Video preview"
-                fill
-                priority
-                className="object-cover"
-              />
-            )}
+                  <iframe
+                    src="https://player.vimeo.com/video/1131698197?h=0&autoplay=0&loop=0&muted=1&title=0&byline=0&portrait=0"
+                    className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                      videoLoaded ? 'opacity-100' : 'opacity-0'
+                    }`}
+                    allow="fullscreen; picture-in-picture"
+                    allowFullScreen
+                    onLoad={() => setVideoLoaded(true)}
+                  />
+                </div>
 
-            <iframe
-              src="https://player.vimeo.com/video/1131698197?h=0&autoplay=0&loop=0&muted=1&title=0&byline=0&portrait=0"
-              className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
-                videoLoaded ? 'opacity-100' : 'opacity-0'
-              }`}
-              allow="fullscreen; picture-in-picture"
-              allowFullScreen
-              onLoad={() => setVideoLoaded(true)}
-            />
+                <div className="flex items-center gap-4 mt-6">
+                  <Image
+                    src="/kainan.png"
+                    alt="Kainan Pires"
+                    width={44}
+                    height={44}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <p className="font-medium">Kainan Pires</p>
+                    <p className="text-sm text-gray-400">
+                      CEO & Founder
+                    </p>
+                  </div>
+                </div>
           </div>
-
-          <div className="flex items-center gap-4 mt-6">
-            <Image
-              src="/kainan.png"
-              alt="Kainan Pires"
-              width={44}
-              height={44}
-              className="rounded-full"
-            />
-            <div>
-              <p className="font-medium">Kainan Pires</p>
-              <p className="text-sm text-gray-400">
-                CEO & Founder
-              </p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

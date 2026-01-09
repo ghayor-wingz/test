@@ -6,13 +6,13 @@ export default function Hero() {
   return (
     <section className="bg-[#F3F757] overflow-hidden pb-12 md:pb-24">
       <div className="relative page-width">
-        <div className="relative min-h-[250px] md:min-h-[620px] w-full overflow-hidden">
+        <div className="relative md:min-h-[620px] w-full overflow-hidden">
           <h1 className="sr-only">
             Five Five One — Beautiful brands attract. Profitable brands convert.
           </h1>
           <div className="md:hidden mt-10 overflow-hidden bg-[#F3F757] w-full">
             <video
-            className="object-cover w-full block vid-height"
+            className="object-cover w-full block"
             autoPlay
             muted
             loop
@@ -22,7 +22,7 @@ export default function Hero() {
             aria-hidden="true"
           >
             <source
-              src="https://cdn.shopify.com/videos/c/o/v/13490da696f54bd2b20ea8d3b8e76f1c.mp4"
+              src="https://cdn.shopify.com/videos/c/o/v/da2781a8399747eeb013647cdd11ae4c.mp4"
               type="video/mp4"
             />
           </video>
